@@ -45,7 +45,7 @@ def findClosestValueInBstHelper2(tree, target, closest):
         if abs(target - closest) > abs(target - currentNode.value):
             closest = currentNode.value
         if target > currentNode.value:
-           currentNode = currentNode.right
+            currentNode = currentNode.right
         elif target < currentNode.value:
             currentNode = currentNode.left
         else:
