@@ -5,3 +5,6 @@ Task: check if there are two numbers in an array which sum equals to required, i
 2. *Validate subsequence*  
 `[5, 1, 22, 25, 6, -1, 8, 10]`, `[1, 6, -1, 10]`  
 Task: check if the second array is a valid subsequence of the first one
+
+3. *Find the closest value in binary search tree*
+Task: find the closest value to the target value that contain in the bst 
