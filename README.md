@@ -11,3 +11,6 @@ Task: find the closest value to the target value that contain in the bst
 
 4. *Branch sums*  
 Task: find sums of all branches in binary tree  
+
+5. *Node depth*  
+Task: find sum of all nodes depths  
