@@ -1,4 +1,4 @@
-import bst
+from utils import bst
 
 # binary search tree
 tree = bst.BSTNode(10)
