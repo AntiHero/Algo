@@ -11,8 +11,6 @@ tree.insert(13)
 tree.insert(20)
 
 # O(n) time | O(log(n)) space | Worst O(n) space
-
-
 def branchSums(root):
     sums = []
     caculateBranchSums(root, 0, sums)
