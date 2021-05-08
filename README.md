@@ -8,3 +8,6 @@ Task: check if the second array is a valid subsequence of the first one
 
 3. *Find the closest value in binary search tree*  
 Task: find the closest value to the target value that contain in the bst 
+
+4. *Branch sums*  
+Task: find sums of all branches in binary tree  
