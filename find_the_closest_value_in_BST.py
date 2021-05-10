@@ -16,7 +16,6 @@ tree.display()
 
 
 # Avg O(log(n)) time | Worst O(n) time | Avg O(log(n)) space | Worst O(n) space
-
 def find_closest_value_in_bst1(btree, target):
     return find_closest_value_in_bst_helper1(btree, target, float("inf"))
 

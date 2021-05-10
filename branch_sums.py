@@ -1,6 +1,5 @@
 from utils import bst
 
-# binary search tree
 tree = bst.BSTNode(11)
 
 tree.insert(7)
