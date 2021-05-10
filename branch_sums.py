@@ -10,6 +10,8 @@ tree.insert(15)
 tree.insert(13)
 tree.insert(20)
 
+tree.display()
+
 # O(n) time | O(log(n)) space | Worst O(n) space
 def branchSums(root):
     sums = []

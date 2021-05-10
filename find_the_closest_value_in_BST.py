@@ -12,45 +12,50 @@ tree.insert(19)
 tree.insert(22)
 tree.insert(12)
 
+tree.display()
+
+
 # Avg O(log(n)) time | Worst O(n) time | Avg O(log(n)) space | Worst O(n) space
 
-def findClosestValueInBst1(tree, target):
-    return findClosestValueInBstHelper1(tree, target, float("inf"))
+def find_closest_value_in_bst1(btree, target):
+    return find_closest_value_in_bst_helper1(btree, target, float("inf"))
 
 
-def findClosestValueInBstHelper1(tree, target, closest):
-    if tree is None:
+def find_closest_value_in_bst_helper1(btree, target, closest):
+    if btree is None:
         return closest
-    if abs(target - closest) > abs(target - tree.value):
-        closest = tree.value
-    if target < tree.value:
-        return findClosestValueInBstHelper1(tree.left, target, closest)
-    elif target > tree.value:
-        return findClosestValueInBstHelper1(tree.right, target, closest)
+    if abs(target - closest) > abs(target - btree.value):
+        closest = btree.value
+    if target < btree.value:
+        return find_closest_value_in_bst_helper1(btree.left, target, closest)
+    elif target > btree.value:
+        return find_closest_value_in_bst_helper1(btree.right, target, closest)
     else:
         return closest
 
-print('findClosestValueInBst1', findClosestValueInBst1(tree, 12))
+
+print('find_closest_value_in_bst1', find_closest_value_in_bst1(tree, 12))
 
 
-def findClosestValueInBst2(tree, target):
-    return findClosestValueInBstHelper2(tree, target, float("inf"))
+def find_closest_value_in_bst2(btree, target):
+    return find_closest_value_in_bst_helper2(btree, target, float("inf"))
 
 
 # Avg O(log(n)) time | Worst O(n) time | Avg O(1) space | Worst O(1) space
-def findClosestValueInBstHelper2(tree, target, closest):
-    currentNode = tree
+def find_closest_value_in_bst_helper2(btree, target, closest):
+    current_node = btree
 
-    while currentNode is not None:
-        if abs(target - closest) > abs(target - currentNode.value):
-            closest = currentNode.value
-        if target > currentNode.value:
-            currentNode = currentNode.right
-        elif target < currentNode.value:
-            currentNode = currentNode.left
+    while current_node is not None:
+        if abs(target - closest) > abs(target - current_node.value):
+            closest = current_node.value
+        if target > current_node.value:
+            current_node = current_node.right
+        elif target < current_node.value:
+            current_node = current_node.left
         else:
             break
 
     return closest
 
-print('findClosestValueInBst2', findClosestValueInBst2(tree, 12))
+
+print('find_closest_value_in_bst2', find_closest_value_in_bst2(tree, 12))
