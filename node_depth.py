@@ -37,7 +37,6 @@ print('count_node_depth', count_node_depth(tree))
 def count_node_depth_recursive(btree, depth=0):
     if btree is None:
         return 0
-    print(depth)
     return depth + count_node_depth_recursive(btree.right, depth + 1) + count_node_depth_recursive(btree.left, depth + 1)
 
 
