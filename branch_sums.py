@@ -12,24 +12,25 @@ tree.insert(20)
 
 tree.display()
 
+
 # O(n) time | O(log(n)) space | Worst O(n) space
-def branchSums(root):
+def branch_sums(root):
     sums = []
-    caculateBranchSums(root, 0, sums)
+    calculate_branch_sums(root, 0, sums)
     return sums
 
 
-def caculateBranchSums(node, currentSum, sums):
+def calculate_branch_sums(node, current_sum, sums):
     if node is None:
         return
-    newCurrentSum = currentSum + node.value
+    new_current_sum = current_sum + node.value
 
     if node.left is None and node.right is None:
-        sums.append(newCurrentSum)
+        sums.append(new_current_sum)
         return
 
-    caculateBranchSums(node.left, newCurrentSum, sums)
-    caculateBranchSums(node.right, newCurrentSum, sums)
+    calculate_branch_sums(node.left, new_current_sum, sums)
+    calculate_branch_sums(node.right, new_current_sum, sums)
 
 
-print('branchSums', branchSums(tree))
+print('branch_sums', branch_sums(tree))
