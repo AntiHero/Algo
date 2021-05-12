@@ -14,3 +14,6 @@ Task: find sums of all branches in binary tree
 
 5. *Node depth*  
 Task: find sum of all nodes depths  
+
+6. *Three numbers sum*  
+Task: find all possible three numbers combinations which sum is equal to required  
