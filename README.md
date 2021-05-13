@@ -17,3 +17,6 @@ Task: find sum of all nodes depths
 
 6. *Three numbers sum*  
 Task: find all possible three numbers combinations which sum is equal to required  
+
+7. *Subbaray sort*  
+Task: find minimum sub array when sorted is going make entire array sorted  
