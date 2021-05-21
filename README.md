@@ -20,3 +20,10 @@ Task: find all possible three numbers combinations which sum is equal to require
 
 7. *Subbaray sort*  
 Task: find minimum sub array when sorted is going make entire array sorted  
+
+8. *Binary search tree construction*  
+Task: construct BST with following methods: 
+- insertion
+- searching
+- deletion
+ 
