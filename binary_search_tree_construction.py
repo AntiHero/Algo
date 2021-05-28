@@ -4,6 +4,8 @@ class BST:
         self.left = None
         self.right = None
 
+    # Avg: O(log(n)) time | O(1) space
+    # Worst: O(n) time | O(1) space
     def insert(self, value):
         current_node = self
         while True:
@@ -22,3 +24,17 @@ class BST:
                     current_node = current_node.right
 
         return self
+
+    # Avg: O(log(n)) time | O(1) space
+    # Worst: O(n) time | O(1) space
+    def contains(self, value):
+        current_node = self
+        while current_node is not None:
+            if value < current_node.value:
+                current_node = current_node.left
+            elif value > current_node:
+                current_node = current_node.right
+            else:
+                return True
+
+        return False
