@@ -77,6 +77,12 @@ class BST:
         return current_node.value
 
     @staticmethod
+    def get_max_value(current_node):
+        while current_node.right is not None:
+            current_node = current_node.right
+        return current_node.value
+
+    @staticmethod
     def print(node=None, level=0):
         if node is not None:
             BST.print(node.right, level + 1)
@@ -93,7 +99,5 @@ tree.insert(13)
 tree.insert(22)
 
 BST.print(tree)
-
 tree.remove(10)
-
 BST.print(tree)
