@@ -26,4 +26,7 @@ Task: construct BST with following methods:
 - insertion
 - searching
 - deletion
+
+9. *Validate binary search tree*  
+Task: validate BST
  
