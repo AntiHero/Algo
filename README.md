@@ -29,4 +29,8 @@ Task: construct BST with following methods:
 
 9. *Validate binary search tree*  
 Task: validate BST
+
+10. *Quick sort*  
+Task: implement quick sort algorithm  
+
  
