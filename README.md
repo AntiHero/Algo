@@ -31,6 +31,10 @@ Task: construct BST with following methods:
 Task: validate BST
 
 10. *Quick sort*  
-Task: implement quick sort algorithm  
+Task: implement quick sort algorithm 
+
+11. *Spiral Traverse*  
+Task: write a function that returns a one-dimensional array from 2-dimensional array in spiral order  
+ 
 
  
