@@ -34,7 +34,7 @@ Task: validate BST
 Task: implement quick sort algorithm 
 
 11. *Spiral Traverse*  
-Task: write a function that returns a one-dimensional array from 2-dimensional array in spiral order  
+Task: write a function that returns a 1-dimensional array from 2-dimensional array in spiral order  
  
 
  

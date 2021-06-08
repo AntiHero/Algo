@@ -41,6 +41,7 @@ def recursive_spiral_traverse(array):
     return result
 
 
+# O(n) Time | O(n) space
 def spiral_fill(array, result, s_row, s_col, e_row, e_col):
     if s_row <= e_row and s_col <= e_col:
         for col in range(s_col, e_col + 1):
