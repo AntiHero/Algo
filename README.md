@@ -37,7 +37,8 @@ Task: implement quick sort algorithm
 Task: write a function that returns a 1-dimensional array from 2-dimensional array in spiral order  
 
 12. *BST Traversal*  
-Task: traverse BST  
- 
+Task: traverse BST 
 
+11. *Merge Sort*  
+Task: sort array using `merge sort`
  
