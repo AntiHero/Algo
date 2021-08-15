@@ -92,6 +92,5 @@ def do_merge(main_arr, auxiliary_arr, start_idx, middle_idx, end_idx):
         k += 1
 
 
-
 print('original array', array)
 print('merge sort in place', merge_sort_in_place(array))
