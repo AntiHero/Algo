@@ -1,6 +1,7 @@
 array = [8, 5, 2, 9, 5, 6, 3]
 
 
+# O(n*log(n)) time | O(n*log(n)) space
 def merge_sort(arr):
     if len(arr) == 1:
         return arr
