@@ -43,3 +43,54 @@ def merge_sorted_arrays(left_half, right_half):
 
 
 print('merge sort', merge_sort(array))
+
+
+# O(n*log(n)) time | O(n) space
+def merge_sort_in_place(arr):
+    if len(arr) <= 1:
+        return arr
+
+    auxiliary_arr = arr[:]
+    merge_sort_helper(arr, auxiliary_arr, 0, len(arr) - 1)
+    return arr
+
+
+def merge_sort_helper(main_arr, auxiliary_arr, start_idx, end_idx):
+    if start_idx == end_idx:
+        return
+
+    middle_idx = (start_idx + end_idx) // 2
+    merge_sort_helper(auxiliary_arr, main_arr, start_idx, middle_idx)
+    merge_sort_helper(auxiliary_arr, main_arr, middle_idx + 1, end_idx)
+    do_merge(main_arr, auxiliary_arr, start_idx, middle_idx, end_idx)
+
+
+def do_merge(main_arr, auxiliary_arr, start_idx, middle_idx, end_idx):
+    k = start_idx
+    i = start_idx
+    j = middle_idx + 1
+
+    while i <= middle_idx and j <= end_idx:
+        if auxiliary_arr[i] <= auxiliary_arr[j]:
+            main_arr[k] = auxiliary_arr[i]
+            i += 1
+        else:
+            main_arr[k] = auxiliary_arr[j]
+            j += 1
+
+        k += 1
+
+    while i <= middle_idx:
+        main_arr[k] = auxiliary_arr[i]
+        i += 1
+        k += 1
+
+    while j <= end_idx:
+        main_arr[k] = auxiliary_arr[j]
+        j += 1
+        k += 1
+
+
+
+print('original array', array)
+print('merge sort in place', merge_sort_in_place(array))
