@@ -39,9 +39,9 @@ Task: write a function that returns a 1-dimensional array from 2-dimensional arr
 12. *BST Traversal*  
 Task: traverse BST 
 
-11. *Merge Sort*  
+13. *Merge Sort*  
 Task: sort array using `merge sort`
 
-12. *Heap Sort*  
+14. *Heap Sort*  
 Task: sort array using `heap sort`
  
