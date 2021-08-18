@@ -41,4 +41,7 @@ Task: traverse BST
 
 11. *Merge Sort*  
 Task: sort array using `merge sort`
+
+12. *Heap Sort*  
+Task: sort array using `heap sort`
  
