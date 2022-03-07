@@ -1,6 +1,3 @@
-from shutil import move
-
-
 # O(n) time | O(1) space
 def move_element_to_end(array, element):
     i = 0
