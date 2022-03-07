@@ -44,4 +44,7 @@ Task: sort array using `merge sort`
 
 14. *Heap Sort*  
 Task: sort array using `heap sort`
+
+15. *Move element to end*  
+Task: move element to the end of an array  
  
