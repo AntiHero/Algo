@@ -47,4 +47,8 @@ Task: sort array using `heap sort`
 
 15. *Move element to end*  
 Task: move element(s) to the end of an array  
+
+16. *Invert binary tree*
+Task: invert a provided binary tree  
+
  
