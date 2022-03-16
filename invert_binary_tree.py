@@ -13,7 +13,7 @@ root.insert(22)
 root.display()
 
 
-# O(N) time | O(d) time, wher d - depth | O(lon(N))
+# O(n) time | O(d) time, wher d - depth | O(lon(n))
 def invert_binary_tree_recursively(tree):
     if tree is None:
         return
@@ -27,7 +27,7 @@ print('\n')
 root.display()
 
 
-# O(N) time | O(N) space
+# O(n) time | O(n) space
 def invert_binary_tree(tree):
     queue = [tree]
 
