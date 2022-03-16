@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 from utils import bst
 
 root = bst.BSTNode(10)
